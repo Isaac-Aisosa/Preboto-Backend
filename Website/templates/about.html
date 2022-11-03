@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container mt-3">
+   {% for about in abouts %}
+    <div>
+        <h2>{{about.title}}</h2>
+        <p>{{about.body}}</p>
+    </div>
+
+    {% endfor %}
+
+
+</div>
+
+
+
+{%endblock%}
